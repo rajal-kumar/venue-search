@@ -24,7 +24,6 @@ class Nav extends React.Component {
   render() {
     return (
       <div>
-        <h1>Nav</h1>
         <input onChange={this.updateZipCode.bind(this)} type="text" placeholder="Enter Zip code" />
         <button onClick={this.searchVenue.bind(this)}>Search</button>
       </div>
