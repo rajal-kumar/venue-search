@@ -12,13 +12,13 @@ class Nav extends React.Component {
   searchVenue() {
     console.log('searchVenues: ' + this.state.zipCode)
 
-    const url = 'http://api.forsquare.com/v2/venues/search?v=20140806&ll=-33.8670,151.1957&client_id=D4YEDGD1GTKLGI2I3M4XACTYM5BCOOPDYGYS4Q02KK4E05QF&client_secret=AF0KJ1OGPZBFAPMB1SJO4YBQPNBONYKVUZI0ZSSYKRMMSTUG'
+    const url = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBNFr53cVfmjaFSEzicYR6igvpS8MNUFFE&callback=initMap'
 
     superagent
-      .get(url)
+    .get(url)
     .query(null)
     .set('Aceept', 'application/json')
-    .end(response => {
+    .end((err, response) => {
       console.log('RESPONSE: ' + JSON.stringify(response))
     })
   }
