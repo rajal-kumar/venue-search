@@ -1,4 +1,5 @@
 import React from 'react'
+import superagent from 'superagent'
 
 class Nav extends React.Component {
   constructor() {
@@ -10,6 +11,11 @@ class Nav extends React.Component {
   
   searchVenue() {
     console.log('searchVenues: ' + this.state.zipCode)
+    superagent
+    .get()
+    .query()
+    .send()
+    .end()
   }
 
   updateZipCode(event) {
