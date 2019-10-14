@@ -1,11 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import { Nav, Venues } from './components'
 
 function App() {
   return (
     <div className="App">
-      <h1>This is a starting point for my project of the day starting on the 14th of October 2019 :)</h1>
+        <Nav />
+        React App :)
+        <Venues />
     </div>
   );
 }
